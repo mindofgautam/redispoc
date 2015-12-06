@@ -1,0 +1,6 @@
+com/gautam/fileindexer/redis/RedisHandler.class
+com/gautam/fileindexer/process/FullIndexerProcess.class
+com/gautam/fileindexer/index/FileIndexer.class
+com/gautam/fileindexer/filescanner/FileScanner.class
+com/gautam/fileindexer/vo/FileVo.class
+com/gautam/fileindexer/index/FileIndexerImpl.class

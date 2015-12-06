@@ -1,0 +1,16 @@
+Hi Team,
+
+In the project which I tried,
+
+1. Assumed Keyword is always a word i.e public is keyword which would give a search result but not ublic (p is removed ublic)
+2. Phrase is combination of multiple words, even a partial work can be searched here eg : public stat or public stati or public static will result in hits
+3. As now across lines cant be searched
+
+High level design :
+I have decoupled the indexer (file searcher) and rest api because we have one one more incremental file searcher which can index delta changes of files and consumer can be very independent of it. 
+Project Indexer - We need to specify directory the indexer.properties and start the indexer
+Project Search API - Rest end point http://localhost:8080/search/{searchTerm}
+
+Search results will based on the most occurring file to least occurring one.
+
+I couldn't understand your #1  "Allow the user to specify whether the word is part of a function name, parameter list or variable name." It would be every interesting, if you could make me understand this with a example or catch up over a call.
